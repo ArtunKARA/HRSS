@@ -1,0 +1,57 @@
+# LaTeX manuscript/report files are intentionally excluded from this code package.
+report/
+*.tex
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.pdf
+
+# IDE and local editor metadata
+.idea/
+**/.idea/
+**/.bsp/
+**/.metals/
+**/.scala-build/
+*.iml
+
+# Scala / Spark build outputs
+**/target/
+**/spark-warehouse/
+*.class
+
+# Python local environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Logs and temporary runtime files
+*.log
+*.tmp
+*.temp
+*.bak
+*.crc
+
+# Large/generated experiment output folders.
+# Curated summary/table/workbook outputs are kept in this package.
+ModelandPerformanceAnalysis/results/experiments/
+ModelandPerformanceAnalysis/results/tuning/
+ModelandPerformanceAnalysis/results/bv_suite/*
+!ModelandPerformanceAnalysis/results/bv_suite/BV_BigData_Test_Suite.xlsx
+!ModelandPerformanceAnalysis/results/bv_suite/bv_bigdata_suite_results.json
+
+# Live Kafka logs are generated locally; keep only the selected metric snapshot.
+SparkKafkaStreaming/results/live_metrics/*
+!SparkKafkaStreaming/results/live_metrics/live_kafka_metrics_20260503-124414.jsonl
+
+# OS metadata
+.DS_Store
+Thumbs.db

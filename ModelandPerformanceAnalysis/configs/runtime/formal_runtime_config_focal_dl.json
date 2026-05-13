@@ -1,0 +1,69 @@
+{
+  "cnn": {
+    "tuning_profile": "paper_tuned_focal",
+    "learning_rate": 0.0005,
+    "batch_size": 32,
+    "epochs": 60,
+    "optimizer": "Adam",
+    "loss_function": "binary_focal_crossentropy",
+    "class_weight_mode": "auto_if_imbalanced",
+    "conv_filters_1": 64,
+    "conv_filters_2": 128,
+    "dense_units": 96,
+    "dropout_rate": 0.25
+  },
+  "rnn": {
+    "tuning_profile": "paper_tuned_focal",
+    "learning_rate": 0.0005,
+    "batch_size": 32,
+    "epochs": 60,
+    "optimizer": "Adam",
+    "loss_function": "binary_focal_crossentropy",
+    "class_weight_mode": "auto_if_imbalanced",
+    "recurrent_units": 96,
+    "dense_units": 64,
+    "dropout_rate": 0.2,
+    "bidirectional": true
+  },
+  "lstm": {
+    "tuning_profile": "paper_tuned_focal",
+    "learning_rate": 0.0005,
+    "batch_size": 32,
+    "epochs": 60,
+    "optimizer": "Adam",
+    "loss_function": "binary_focal_crossentropy",
+    "class_weight_mode": "auto_if_imbalanced",
+    "recurrent_units": 96,
+    "dense_units": 64,
+    "dropout_rate": 0.25,
+    "bidirectional": true
+  },
+  "gru": {
+    "tuning_profile": "paper_tuned_focal",
+    "learning_rate": 0.0005,
+    "batch_size": 32,
+    "epochs": 60,
+    "optimizer": "Adam",
+    "loss_function": "binary_focal_crossentropy",
+    "class_weight_mode": "auto_if_imbalanced",
+    "recurrent_units": 96,
+    "dense_units": 64,
+    "dropout_rate": 0.25,
+    "bidirectional": true
+  },
+  "cnn_lstm_hybrid": {
+    "tuning_profile": "paper_tuned_focal",
+    "learning_rate": 0.0005,
+    "batch_size": 32,
+    "epochs": 70,
+    "optimizer": "Adam",
+    "loss_function": "binary_focal_crossentropy",
+    "class_weight_mode": "auto_if_imbalanced",
+    "conv_filters_1": 64,
+    "conv_filters_2": 128,
+    "recurrent_units": 96,
+    "dense_units": 64,
+    "dropout_rate": 0.25,
+    "bidirectional": true
+  }
+}

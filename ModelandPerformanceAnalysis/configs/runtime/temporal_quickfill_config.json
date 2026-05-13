@@ -1,0 +1,13 @@
+{
+  "temporal_fusion_transformer": {
+    "tuning_profile": "quick_fill",
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "epochs": 10,
+    "recurrent_units": 32,
+    "num_heads": 2,
+    "ff_units": 64,
+    "dense_units": 32,
+    "dropout_rate": 0.2
+  }
+}

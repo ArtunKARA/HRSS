@@ -1,0 +1,108 @@
+{
+  "cnn": {
+    "tuning_profile": "selected_real_dataset_v1",
+    "learning_rate": 0.00025,
+    "batch_size": 64,
+    "epochs": 130,
+    "optimizer": "Adam",
+    "loss_function": "binary_crossentropy",
+    "scaler": "robust",
+    "class_weight_mode": "auto_if_imbalanced",
+    "sequence_layout": "sensor_groups",
+    "feature_group_size": 3
+  },
+  "rnn": {
+    "tuning_profile": "selected_real_dataset_v1",
+    "learning_rate": 0.00035,
+    "batch_size": 64,
+    "epochs": 110,
+    "optimizer": "Adam",
+    "loss_function": "binary_crossentropy",
+    "scaler": "robust",
+    "class_weight_mode": "auto_if_imbalanced",
+    "sequence_layout": "sensor_groups",
+    "feature_group_size": 3
+  },
+  "lstm": {
+    "tuning_profile": "selected_real_dataset_v1",
+    "learning_rate": 0.00025,
+    "batch_size": 64,
+    "epochs": 140,
+    "optimizer": "Adam",
+    "loss_function": "binary_crossentropy",
+    "scaler": "robust",
+    "class_weight_mode": "auto_if_imbalanced",
+    "sequence_layout": "sensor_groups",
+    "feature_group_size": 3
+  },
+  "gru": {
+    "tuning_profile": "selected_real_dataset_v1",
+    "learning_rate": 0.0002,
+    "batch_size": 48,
+    "epochs": 160,
+    "optimizer": "Adam",
+    "loss_function": "binary_crossentropy",
+    "scaler": "robust",
+    "class_weight_mode": "auto_if_imbalanced",
+    "sequence_layout": "sensor_groups",
+    "feature_group_size": 3
+  },
+  "autoencoder": {
+    "tuning_profile": "selected_real_dataset_v1",
+    "learning_rate": 0.0003,
+    "batch_size": 64,
+    "epochs": 120,
+    "optimizer": "Adam",
+    "loss_function": "mse",
+    "scaler": "minmax",
+    "class_weight_mode": "normal_only"
+  },
+  "vanilla_transformer": {
+    "tuning_profile": "selected_real_dataset_v1",
+    "learning_rate": 0.0002,
+    "batch_size": 64,
+    "epochs": 160,
+    "optimizer": "Adam",
+    "loss_function": "binary_crossentropy",
+    "scaler": "robust",
+    "class_weight_mode": "auto_if_imbalanced",
+    "sequence_layout": "sensor_groups",
+    "feature_group_size": 3
+  },
+  "encoder_decoder_transformer": {
+    "tuning_profile": "selected_real_dataset_v1",
+    "learning_rate": 0.0003,
+    "batch_size": 64,
+    "epochs": 150,
+    "optimizer": "Adam",
+    "loss_function": "binary_crossentropy",
+    "scaler": "robust",
+    "class_weight_mode": "auto_if_imbalanced",
+    "sequence_layout": "sensor_groups",
+    "feature_group_size": 3
+  },
+  "temporal_fusion_transformer": {
+    "tuning_profile": "selected_real_dataset_v1",
+    "learning_rate": 0.0002,
+    "batch_size": 48,
+    "epochs": 160,
+    "optimizer": "Adam",
+    "loss_function": "binary_crossentropy",
+    "scaler": "robust",
+    "class_weight_mode": "auto_if_imbalanced",
+    "sequence_layout": "sensor_groups",
+    "feature_group_size": 3
+  },
+  "cnn_lstm_hybrid": {
+    "tuning_profile": "selected_real_dataset_v1",
+    "learning_rate": 0.0002,
+    "batch_size": 64,
+    "epochs": 150,
+    "optimizer": "Adam",
+    "loss_function": "binary_crossentropy",
+    "scaler": "robust",
+    "class_weight_mode": "auto_if_imbalanced",
+    "sequence_layout": "sensor_groups",
+    "feature_group_size": 3
+  }
+}

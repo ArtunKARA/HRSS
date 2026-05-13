@@ -1,0 +1,108 @@
+{
+  "cnn": {
+    "tuning_profile": "smoke_data_driven",
+    "learning_rate": 0.00025,
+    "batch_size": 96,
+    "epochs": 24,
+    "optimizer": "Adam",
+    "loss_function": "binary_crossentropy",
+    "scaler": "robust",
+    "class_weight_mode": "auto_if_imbalanced",
+    "sequence_layout": "sensor_groups",
+    "feature_group_size": 3
+  },
+  "rnn": {
+    "tuning_profile": "smoke_data_driven",
+    "learning_rate": 0.0004,
+    "batch_size": 128,
+    "epochs": 18,
+    "optimizer": "Adam",
+    "loss_function": "binary_crossentropy",
+    "scaler": "robust",
+    "class_weight_mode": "auto_if_imbalanced",
+    "sequence_layout": "sensor_groups",
+    "feature_group_size": 3
+  },
+  "lstm": {
+    "tuning_profile": "smoke_data_driven",
+    "learning_rate": 0.0003,
+    "batch_size": 128,
+    "epochs": 20,
+    "optimizer": "Adam",
+    "loss_function": "binary_crossentropy",
+    "scaler": "robust",
+    "class_weight_mode": "auto_if_imbalanced",
+    "sequence_layout": "sensor_groups",
+    "feature_group_size": 3
+  },
+  "gru": {
+    "tuning_profile": "smoke_data_driven",
+    "learning_rate": 0.00025,
+    "batch_size": 96,
+    "epochs": 24,
+    "optimizer": "Adam",
+    "loss_function": "binary_crossentropy",
+    "scaler": "robust",
+    "class_weight_mode": "auto_if_imbalanced",
+    "sequence_layout": "sensor_groups",
+    "feature_group_size": 3
+  },
+  "autoencoder": {
+    "tuning_profile": "smoke_data_driven",
+    "learning_rate": 0.0005,
+    "batch_size": 128,
+    "epochs": 20,
+    "optimizer": "Adam",
+    "loss_function": "mse",
+    "scaler": "minmax",
+    "class_weight_mode": "normal_only"
+  },
+  "vanilla_transformer": {
+    "tuning_profile": "smoke_data_driven",
+    "learning_rate": 0.0002,
+    "batch_size": 96,
+    "epochs": 30,
+    "optimizer": "Adam",
+    "loss_function": "binary_crossentropy",
+    "scaler": "robust",
+    "class_weight_mode": "auto_if_imbalanced",
+    "sequence_layout": "sensor_groups",
+    "feature_group_size": 3
+  },
+  "encoder_decoder_transformer": {
+    "tuning_profile": "smoke_data_driven",
+    "learning_rate": 0.0003,
+    "batch_size": 96,
+    "epochs": 28,
+    "optimizer": "Adam",
+    "loss_function": "binary_crossentropy",
+    "scaler": "robust",
+    "class_weight_mode": "auto_if_imbalanced",
+    "sequence_layout": "sensor_groups",
+    "feature_group_size": 3
+  },
+  "temporal_fusion_transformer": {
+    "tuning_profile": "smoke_data_driven",
+    "learning_rate": 0.0003,
+    "batch_size": 96,
+    "epochs": 28,
+    "optimizer": "Adam",
+    "loss_function": "binary_crossentropy",
+    "scaler": "robust",
+    "class_weight_mode": "auto_if_imbalanced",
+    "sequence_layout": "sensor_groups",
+    "feature_group_size": 3
+  },
+  "cnn_lstm_hybrid": {
+    "tuning_profile": "smoke_data_driven",
+    "learning_rate": 0.00025,
+    "batch_size": 96,
+    "epochs": 24,
+    "optimizer": "Adam",
+    "loss_function": "binary_crossentropy",
+    "scaler": "robust",
+    "class_weight_mode": "auto_if_imbalanced",
+    "sequence_layout": "sensor_groups",
+    "feature_group_size": 3
+  }
+}
